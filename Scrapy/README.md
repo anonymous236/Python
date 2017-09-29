@@ -11,3 +11,7 @@
 	* `downloader`:根据请求下载网页。
 	* `downloader middleware`：实施engine、scheduler、downloader三者之间用户可配置的控制。
 	* `spider middleware`：对请求和爬取项的再处理。
+## Scrapy运行环境
+```
+python --version
+```
