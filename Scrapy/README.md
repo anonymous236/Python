@@ -15,3 +15,5 @@
 ```
 python --version
 ```
+个人的python版本为 Python 2.7.13
+其他配置猛戳>>>[python+scrapy安装教程](http://jingyan.baidu.com/article/14bd256e748346bb6d2612be.html)
