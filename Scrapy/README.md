@@ -15,5 +15,18 @@
 ```
 python --version
 ```
-个人的python版本为 Python 2.7.13
-其他配置猛戳>>>[python+scrapy安装教程](http://jingyan.baidu.com/article/14bd256e748346bb6d2612be.html)
+个人的python版本为 Python 2.7.13 （统一使用32位）<br>
+其他配置请猛戳>>>[python+scrapy安装教程](http://jingyan.baidu.com/article/14bd256e748346bb6d2612be.html)
+或者可以在控制台直接输入：
+```
+pip install scrapy
+```
+安装完成后测试：
+```
+scrapy -h
+```
+## Scrapy爬虫框架的使用
+* 新建Scrapy爬虫工程
+```
+scrapy startproject 工程名
+```
