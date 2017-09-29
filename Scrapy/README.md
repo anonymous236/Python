@@ -17,7 +17,7 @@ python --version
 ```
 个人的python版本为 Python 2.7.13 （统一使用32位）<br>
 其他配置请猛戳>>>[python+scrapy安装教程](http://jingyan.baidu.com/article/14bd256e748346bb6d2612be.html)
-或者可以在控制台直接输入：
+<br>或者可以在控制台直接输入：
 ```
 pip install scrapy
 ```
@@ -27,6 +27,17 @@ scrapy -h
 ```
 ## Scrapy爬虫框架的使用
 * 新建Scrapy爬虫工程
-```
-scrapy startproject 工程名
-```
+	```
+	scrapy startproject 工程名
+	example : D:\pycodes>scrapy startproject python123demo
+	```
+* 在工程中产生一个Scrapy爬虫
+	```
+	scrapy genspider 爬虫名 域
+	example : D:\pycodes\python123demo>scrapy genspider demo python123.io
+	```
+* 运行爬虫，爬取网页
+	```
+	scrapy crawl 爬虫名
+	example : D:\pycodes\python123demo>scrapy crawl demo
+	```
