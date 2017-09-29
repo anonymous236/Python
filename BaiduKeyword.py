@@ -13,5 +13,4 @@ def Request():
     except:
         print("爬取失败")
         
-if __name__ == "__main__":
-    Request()
+
