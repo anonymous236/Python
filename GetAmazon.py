@@ -11,3 +11,4 @@ def getAmazon() :
         print(r.text[1000:2000])
     except :
         return "爬取失败"
+ 
