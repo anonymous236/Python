@@ -12,4 +12,3 @@ def getAmazon() :
     except :
         return "爬取失败"
  
- 
