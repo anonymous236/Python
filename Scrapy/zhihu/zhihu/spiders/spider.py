@@ -11,7 +11,7 @@ class SpiderSpider(Spider):
     allowed_domains = ['zhihu.com']
 
     def start_requests(self):
-        key_word = "萨德"
+        key_word = "XXX"
         trans_word = urllib.quote(key_word)
         topic_url = "马赛克" + trans_word + "马赛克"
 
