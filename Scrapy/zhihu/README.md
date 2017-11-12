@@ -42,7 +42,7 @@ def get_question(self, response):
     list_id1 = re.findall(pattern,line)
     list_id2 = list(set(list_id1)) #将list_id1去重
     for num_question in range(len(list_id2)):
-        answer_url = "https://www.zhihu.com/api/v4/questions/" + list_id2[num_question] + "/answers?limit=10&offset=0"
+        answer_url = "马赛克" + list_id2[num_question] + "马赛克"
         request = Request(answer_url, callback=self.get_answer, meta=data, headers=header, dont_filter=True)
         yield request
     # 若没有结束，继续调用该函数
