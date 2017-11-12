@@ -71,6 +71,20 @@ def get_question_title(self,response):
     zhihuItem['Content'] = response.meta['content']
     yield zhihuItem
 ```
+* ./zhihu/items.py 文件中声明了要存储的字段：
+```
+from scrapy import Item,Field
+
+class ZhihuItem(Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    KeyWord = Field()
+    Topic_name = Field()
+    Topic_id = Field()
+    Question_id = Field()
+    Question_content = Field()
+    Content = Field()  #内容
+```
 * 爬虫出口：./zhihu/pipelines.py:
 ```
 # 处理中文编码的问题：
