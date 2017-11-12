@@ -60,7 +60,6 @@ class SpiderSpider(Spider):
         header['Accept'] = 'application/json, text/plain, */*'
         header['...'] = '...'
         header['authorization'] = '重要字段'
-        header['User-Agent'] = 'Mozilla/5.0'
 
         # POST方法
         data = {}
