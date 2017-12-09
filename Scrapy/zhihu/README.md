@@ -95,7 +95,8 @@ sys.setdefaultencoding('utf-8')
 class ZhihuPipeline(object):
     def process_item(self, item, spider):
         ...
-        Content = item.get("Content").replace("\\\"", "\\\\\\\"").replace("\\\\","\\").decode("unicode_escape")
+        # 引号、\t、转义符需要注意
+        Content = item.get("Content").replace("\\\"", "\\\\\\\"").replace("\\\\","\\").decode("unicode_escape")
         # 执行写文件操作
         return item
 ```
