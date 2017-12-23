@@ -5,14 +5,14 @@ Python访问数据库(MySQL)
 ```
 开始 --> 创建connection --> 获取cursor --> 执行命令、获取数据、处理数据 --> 关闭cursor --> 关闭connection
 ```
-# DB API-数据库连接对象connection：
+## DB API-数据库连接对象connection：
 * 连接对象：建立Python客户端与数据库的网络连接
 * 创建方法：MySQLdb.Connect参数
 
 参数名|类型|说明
 -----|----|----
 host|字符串|MySQL服务器地址
-prot|数字|MySQL服务器端口号
+port|数字|MySQL服务器端口号
 user|字符串|用户名
 passwd|字符串|密码
 db|字符串|数据库名称
@@ -26,4 +26,17 @@ cursor()|使用该连接创建并返回游标
 commit()|提交当前事务
 rollback()|回滚当前事务
 close()|关闭连接
+
+## DB API-数据库游标对象cursor：
+* 游标对象：用于执行查询和获取结果
+* cursor对象支持的方法：
+
+参数名|说明
+-----|----
+execute(op[,args])|执行一个数据库查询和命令
+fetchone()|获取结果集的下一行
+fetchmany(size)|获取结果集的下size行
+fetchall()|获取结果集中*剩下的*所有行
+rowcount|最近一次execute返回数据的行数或影响行数
+close()|关闭游标对象
 
