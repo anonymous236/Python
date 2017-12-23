@@ -75,9 +75,9 @@ conn.close()
 ```
 
 * 开发中怎样使用事务？
-    * 关闭自动commit：设置conn.autocommit(False) # 默认已关闭
-    * 正常结束事务：conn.commit()
-    * 异常结束事务：conn.rollback()
+    * 关闭自动commit：设置conn.autocommit(False) # 默认已关闭
+    * 正常结束事务：conn.commit()
+    * 异常结束事务：conn.rollback()
 
 ```
 try:
