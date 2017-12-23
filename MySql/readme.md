@@ -74,3 +74,22 @@ conn.close()
     --> 没有异常，使用conn.commit()提交事务
 ```
 
+* 开发中怎样使用事务？
+    * 关闭自动commit：设置conn.autocommit(False) # 默认已关闭
+    * 正常结束事务：conn.commit()
+    * 异常结束事务：conn.rollback()
+    
+```
+try:
+    sql_insert = "insert into information(id,weibo_id,created_time) values('10086','10001','2018-1-1')"
+    sql_update = "update information set weibo_id = '369' where id = '123'"
+    sql_delete = "delete from information where id = '456'"
+    cursor.execute(sql_insert)
+    cursor.execute(sql_update)
+    cursor.execute(sql_delete)
+
+    conn.commit() # 将事务生效
+except Exception as e:
+    print e
+    conn.rollback()
+```
