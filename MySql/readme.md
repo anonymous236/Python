@@ -36,7 +36,33 @@ close()|关闭连接
 execute(op[,args])|执行一个数据库查询和命令
 fetchone()|获取结果集的下一行
 fetchmany(size)|获取结果集的下size行
-fetchall()|获取结果集中*剩下的*所有行
+fetchall()|获取结果集中**剩下的**所有行
 rowcount|最近一次execute返回数据的行数或影响行数
 close()|关闭游标对象
 
+```
+import MySQLdb
+conn = MySQLdb.connect(
+    host = '127.0.0.1',
+    port = 3306,
+    user = 'admin',
+    passwd = 'admin',
+    db = 'weibo',
+    charset = 'utf8',
+)
+cursor = conn.cursor()
+sql = "select * from information"
+cursor.execute(sql)
+r = cursor.fetchall()
+for row in r: # 元组的形式
+    print row[2]
+    print row
+print cursor.rowcount
+cursor.close()
+conn.close()
+```
+## insert/updata/delete操作
+```
+使用cursor.execute()执行语句 --> 出现异常，使用conn.rollback()回滚事务
+                           --> 没有异常，使用conn.commit()提交事务
+```
