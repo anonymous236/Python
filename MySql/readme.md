@@ -9,6 +9,7 @@ Python访问数据库(MySQL)
   * 连接对象：建立Python客户端与数据库的网络连接
   * 创建方法：MySQLdb.Connect参数
 
+<br>
 >参数名|类型|说明
 >-----|----|----
 >host|字符串|MySQL服务器地址
