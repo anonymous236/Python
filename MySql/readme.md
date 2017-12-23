@@ -78,7 +78,7 @@ conn.close()
     * 关闭自动commit：设置conn.autocommit(False) # 默认已关闭
     * 正常结束事务：conn.commit()
     * 异常结束事务：conn.rollback()
-    
+
 ```
 try:
     sql_insert = "insert into information(id,weibo_id,created_time) values('10086','10001','2018-1-1')"
