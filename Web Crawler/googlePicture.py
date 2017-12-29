@@ -16,7 +16,7 @@ if not os.path.exists(key_word.decode("utf-8")):
     os.mkdir(key_word.decode("utf-8"))
 os.chdir(key_word.decode("utf-8"))
 
-url="https://www.google.com.hk/search?&safe=strict&yv=2&newwindow=1&tbm=isch&q=" + trans_word + "URL使用开发者工具获得"
+url="https://www.google.com.hk/search?&safe=strict&yv=2&newwindow=1&tbm=isch&q=" + trans_word + "使用开发者工具获得URL"
 
 list = []
 sum = total = 0
