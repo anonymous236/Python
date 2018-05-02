@@ -59,7 +59,7 @@
   v2ex http://pypi.v2ex.com/simple/<br>
   中国科学院 http://pypi.mirrors.opencas.cn/simple/<br>
   清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/<br>
-* 安装CUDA [GPU  云服务器应该无法安装]
+* 安装CUDA [for GPU ; 云服务器应该无法安装]
   * 登录 [CUDA驱动下载](https://developer.nvidia.com/cuda-75-downloads-archive) 或复制链接 https://developer.nvidia.com/cuda-75-downloads-archive
   * 依次选择操作系统和安装包
     > 注意：<br>
