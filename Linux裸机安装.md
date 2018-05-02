@@ -63,15 +63,16 @@
   * 登录 [CUDA驱动下载](https://developer.nvidia.com/cuda-75-downloads-archive) 或复制链接 https://developer.nvidia.com/cuda-75-downloads-archive
   * 依次选择操作系统和安装包
     > 注意：<br>
-    > Installer Type 推荐选择 rpm（network）<br>
-    > network：网络安装包，安装包较小，需要在主机内联网下载实际的安装包<br>
-    > local：本地安装包。安装包较大，包含每一个下载安装组件的安装包
-  * 右键复制【Download】地址
-  * 选择 /lib/cuda/ 目录下使用`wget`命令
-  ```shell
-  wget [复制的下载链接地址]
-  sudo rpm -i cuda-repo-rhel7-7.5-18.x86_64.rpm(这是下载的文件)
+      Installer Type 推荐选择 rpm（network）<br>
+      network：网络安装包，安装包较小，需要在主机内联网下载实际的安装包<br>
+      local：本地安装包。安装包较大，包含每一个下载安装组件的安装包<br>
+      
+  * 右键复制【Download】地址
+  * 选择 /lib/cuda/ 目录下使用`wget`命令
+  ```shell
+  wget [复制的下载链接地址]
+  sudo rpm -i cuda-repo-rhel7-7.5-18.x86_64.rpm(这是下载的文件)
   sudo yum clean all
   sudo yum install cuda
-  ```
-  * 在该目录下
+  ```
+  * 在该目录下
