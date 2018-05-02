@@ -45,3 +45,17 @@
   python3 -V
   pip3 -V
   ```
+* pip-修改国内镜像源
+  ```shell
+  mkdir ~/.pip 
+  vim ~/.pip/pip.conf
+  [global]
+  index-url = https://mirrors.aliyun.com/pypi/simple/
+  ```
+  阿里云 https://mirrors.aliyun.com/pypi/simple/<br>
+  中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/<br>
+  豆瓣 http://pypi.douban.com/simple<br>
+  Python官方 https://pypi.python.org/simple/<br>
+  v2ex http://pypi.v2ex.com/simple/<br>
+  中国科学院 http://pypi.mirrors.opencas.cn/simple/<br>
+  清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/<br>
