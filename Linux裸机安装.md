@@ -3,7 +3,12 @@
 * CentOS 7.4 64位 | 1核 2GB 1Mbps 系统盘：普通云硬盘
 
 ## 裸机安装说明
-* 系统有python2.7，没有python3.6<br>
+* 有python2.7，但没有pip:
+  ```python
+  wget https://bootstrap.pypa.io/get-pip.py
+  python get-pip.py
+  ```
+* 系统没有python3.6<br><br>
   安装python3.6：
   * 安装依赖环境
   ```shell
