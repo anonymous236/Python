@@ -4,7 +4,7 @@
 
 ## 裸机安装说明
 * 有python2.7，但没有pip:
-  ```python
+  ```shell
   wget https://bootstrap.pypa.io/get-pip.py
   python get-pip.py
   ```
