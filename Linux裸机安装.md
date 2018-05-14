@@ -82,6 +82,12 @@
   ```
   * 在/usr/local/cuda-XXX/samples/1_Utilities/deviceQuery目录下，执行`make`命令，可以编译出 deviceQuery 程序
 
+* 问题: hdf5.h: No such file or directory
+  ```shell
+  pip3 install h5py
+  pip3 install zmq
+  ```
+  
 * 问题：command 'gcc' failed with exit status 1<br>
   For Redhat Versions(Centos 7) Use below command to install Python Development Package<br>
   **Python2.7**<br>
