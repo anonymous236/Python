@@ -8,6 +8,11 @@
   wget https://bootstrap.pypa.io/get-pip.py
   python get-pip.py
   ```
+  上面报错的话还有其他[方法](https://www.makeuseof.com/tag/install-pip-for-python/):
+  ```shell
+  sudo yum upgrade python-setuptools
+  sudo yum install python-pip python-wheel
+  ```
 * 系统没有python3.6<br><br>
   安装python3.6：
   * 安装依赖环境
