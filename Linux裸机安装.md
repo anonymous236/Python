@@ -99,3 +99,19 @@
   `sudo yum install python-dev`<br>
   **Python3.6**<br>
   `sudo yum install python36-devel`<br>
+
+
+===
+
+* 创建新用户，只能访问特定的目录
+```python
+1.指用户访问目录：mkdir user1
+2.更改权限： chmod 777 -R user1
+3.创建用户，指定访问目录： useradd -d /home/user1 user1
+4.设置密码： passwd user1
+5.设置user1的sudo权限：
+  更改文件权限： chmod u+w /etc/sudoers
+  vim /etc/sudoers
+  在root ALL=(ALL)ALL下方添加：user ALL=(ALL)ALL
+  还原文件权限：chmod u-w /etc/sudoers
+```
